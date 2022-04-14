@@ -1,5 +1,5 @@
 # Dark Arc
-A dark theme for gitea with good contrast.
+A dark theme for gitea with high contrast.
 
 This theme was created by making a copy of theme-arc-green.css and making things darker for better contrast.
 
