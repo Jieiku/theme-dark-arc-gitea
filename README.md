@@ -46,12 +46,39 @@ Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git 
 ## Restart gitea service
 
     sudo systemctl restart gitea
-    
+
     *or*
-    
+
     sudo reboot
 
-## Notes:
+The theme may automatically be active now, but if not click your avatar in top right, click settings, click appearance tab, select the theme and click update theme button.
+
+
+## Notes
+
+### assets:
+
+`/assets` is simply a POINTER to `$GITEA_CUSTOM/public` you should NOT actually create an assets directory.
+
+So for me my directory structure is:
+
+`/var/lib/gitea/custom/public/css/theme-dark-arc.css`
+
+but if you view the page source in a web browser you will see:
+
+`/assets/css/index.css?v=1b37ebcaa3151193e91d19ed55808a12`
+
+They are one and the same file.
+
+
+### Set custom path when running gitea as a service by setting the `config` and `custom-path` values yourself:
+
+    sudo nano /etc/systemd/system/gitea.service
+
+    ExecStart=/usr/local/bin/gitea web --custom-path /var/lib/gitea/custom --config /var/lib/gitea/custom/conf/app.ini
+
+
+### Organizations:
 
 I created a feature request for a way to disable organizations because I don't use them.
 
