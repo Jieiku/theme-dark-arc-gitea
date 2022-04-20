@@ -9,6 +9,50 @@ If you make improvements/tweaks to this theme please send a pull request, or dum
 
 ![dark-arc-repository](screenshot2.png)
 
+## Before install, first you need to identify 3 things:
+
+- Location of $GITEA_CUSTOM
+- Location of app.ini [Example app.ini](https://raw.githubusercontent.com/go-gitea/gitea/main/custom/conf/app.example.ini)
+- User the gitea service runs as
+
+Here is a screenshot of my environment and where to find this info:
+
+![gitea-config](https://user-images.githubusercontent.com/106644/164337138-d3189b31-61d9-416d-ac59-3412a1dcc1c8.png)
+
+## Create a public/css directory under your gitea/custom path and download the theme.
+
+In the previous screenshot I posted you can see that MY $GITEA_CUSTOM path is `/var/lib/gitea/custom` so I will create `/public/css` below this:
+
+    sudo mkdir -p /var/lib/gitea/custom/public/css
+    cd /var/lib/gitea/custom/public/css
+    wget https://raw.githubusercontent.com/Jieiku/theme-dark-arc-gitea/main/theme-dark-arc.css
+
+## Edit the app.ini config file to include dark-arc theme:
+
+The app.ini file location may differ depending on environment, this matches the location of my file as seen in the previous screenshot.
+
+`sudo nano /var/lib/gitea/custom/conf/app.ini`
+
+    [ui]
+    DEFAULT_THEME = dark-arc
+    THEMES = gitea,dark-arc
+
+## Make sure ownership is correct:
+
+Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git because gitea runs as user git as seen in the previous screenshot.
+
+    sudo chown -R git:git /var/lib/gitea/custom
+
+## Restart gitea service
+
+    sudo systemctl restart gitea
+    
+    *or*
+    
+    sudo reboot
+
+## Notes:
+
 I created a feature request for a way to disable organizations because I don't use them.
 
 I was promptly told to use css and my request was closed: https://github.com/go-gitea/gitea/issues/19391
