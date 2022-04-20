@@ -21,7 +21,7 @@ Here is a screenshot of my environment and where to find this info:
 
 ## Create a public/css directory under your gitea/custom path and download the theme.
 
-Create `/public/css` below your $GITEA_CUSTOM path, MY custom path is `/var/lib/gitea/custom`, as seen in the [screenshot](install.png).
+Create `/public/css` below your $GITEA_CUSTOM path, MY custom path is `/var/lib/gitea/custom`, as seen in the [install screenshot](install.png).
 
     sudo mkdir -p /var/lib/gitea/custom/public/css
     cd /var/lib/gitea/custom/public/css
@@ -29,13 +29,13 @@ Create `/public/css` below your $GITEA_CUSTOM path, MY custom path is `/var/lib/
 
 ## Make sure ownership is correct:
 
-Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git because gitea runs as user git, as seen in the [screenshot](install.png).
+Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git because gitea runs as user git, as seen in the [install screenshot](install.png).
 
     sudo chown -R git:git /var/lib/gitea/custom
 
 ## Edit the app.ini config file to include dark-arc theme:
 
-The app.ini file location may differ depending on environment, this matches the location of my file, as seen in the [screenshot](install.png).
+The app.ini file location may differ depending on environment, this matches the location of my file, as seen in the [install screenshot](install.png).
 
 `sudo nano /var/lib/gitea/custom/conf/app.ini`
 
