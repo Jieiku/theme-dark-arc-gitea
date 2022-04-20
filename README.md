@@ -12,7 +12,7 @@ If you make improvements/tweaks to this theme please send a pull request, or dum
 ## Before install, first you need to identify 3 things:
 
 - Location of $GITEA_CUSTOM
-- Location of app.ini [Example app.ini](https://raw.githubusercontent.com/go-gitea/gitea/main/custom/conf/app.example.ini)
+- Location of app.ini ([Example app.ini](https://raw.githubusercontent.com/go-gitea/gitea/main/custom/conf/app.example.ini))
 - User the gitea service runs as
 
 Here is a screenshot of my environment and where to find this info:
