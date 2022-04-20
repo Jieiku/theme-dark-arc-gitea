@@ -29,13 +29,13 @@ In the previous screenshot I posted you can see that MY $GITEA_CUSTOM path is `/
 
 ## Make sure ownership is correct:
 
-Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git because gitea runs as user git as seen in the previous screenshot.
+Set ownership of your $GITEA_CUSTOM directory and files, I set ownership to git because gitea runs as user git, as seen in the previous screenshot.
 
     sudo chown -R git:git /var/lib/gitea/custom
 
 ## Edit the app.ini config file to include dark-arc theme:
 
-The app.ini file location may differ depending on environment, this matches the location of my file as seen in the previous screenshot.
+The app.ini file location may differ depending on environment, this matches the location of my file, as seen in the previous screenshot.
 
 `sudo nano /var/lib/gitea/custom/conf/app.ini`
 
