@@ -70,13 +70,11 @@ but if you view the page source in a web browser you will see:
 
 They are one and the same file.
 
-
 ### Configure `config` and `custom-path` values when running gitea as a service:
 
     sudo nano /etc/systemd/system/gitea.service
 
     ExecStart=/usr/local/bin/gitea web --custom-path /var/lib/gitea/custom --config /var/lib/gitea/custom/conf/app.ini
-
 
 ### Organizations:
 
