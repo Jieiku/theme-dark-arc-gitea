@@ -72,9 +72,11 @@ They are one and the same file.
 
 ### You can set `config` and `custom-path` values when running gitea as a service:
 
-    sudo nano /etc/systemd/system/gitea.service
+```shell
+sudo nano /etc/systemd/system/gitea.service
 
-    ExecStart=/usr/local/bin/gitea web --custom-path /var/lib/gitea/custom --config /var/lib/gitea/custom/conf/app.ini
+ExecStart=/usr/local/bin/gitea web --custom-path /var/lib/gitea/custom --config /var/lib/gitea/custom/conf/app.ini
+```
 
 ### Organizations:
 
@@ -84,6 +86,8 @@ I was promptly told to use css and my request was closed: https://github.com/go-
 
 This theme hides Organizations using CSS, you can find it at the bottom of the theme:
 
-    #dashboard-repo-list > div > div:first-child {
-      display: none !important;
-    }
+```css
+#dashboard-repo-list > div > div:first-child {
+  display: none !important;
+}
+```
