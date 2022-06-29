@@ -154,7 +154,7 @@
 .chroma .ch,
 .chroma .cm,
 .chroma .c1 {
-    color: #6a737d
+    color: #7c8590
 }
 
 .chroma .cs {
@@ -418,7 +418,7 @@
     --color-footer: #222222;
     --color-timeline: #4c525e;
     --color-input-text: #d5dbe6;
-    --color-input-background: #292929;
+    --color-input-background: #1b1b1b;
     --color-input-border: #222222;
     --color-input-border-hover: #505667;
     --color-navbar: #222222;
@@ -431,12 +431,12 @@
     --color-menu: #222222;
     --color-card: #222222;
     --color-markup-table-row: #ffffff06;
-    --color-markup-code-block: #292929;
+    --color-markup-code-block: #1b1b1b;
     --color-button: #333333;
-    --color-code-bg: #292929;
+    --color-code-bg: #1b1b1b;
     --color-code-sidebar-bg: #222222;
     --color-shadow: #00000060;
-    --color-secondary-bg: #292929;
+    --color-secondary-bg: #1b1b1b;
     --color-text-focus: #fff;
     --color-expand-button: #3c404d;
     --color-placeholder-text: #6a737d;
