@@ -410,6 +410,7 @@
     --color-body: #111111;
     --color-box-header: #222222;
     --color-box-body: #111111;
+    --color-box-body-highlight: #3a3e4c;
     --color-text-dark: #dbe0ea;
     --color-text: #bbc0ca;
     --color-text-light: #a6aab5;
@@ -636,12 +637,16 @@ a.ui.basic.green.label:hover {
 }
 
 .tag-code td.lines-num {
-    background-color: #3a3e4c !important
+    background-color: var(--color-box-body-highlight) !important
 }
 
 .tag-code td.lines-type-marker,
 td.blob-hunk {
     color: #dbdbdb !important
+}
+
+.tag-code .blob-excerpt:hover {
+    background-color: var(--color-hover) !important;
 }
 
 .ui.red.button,
