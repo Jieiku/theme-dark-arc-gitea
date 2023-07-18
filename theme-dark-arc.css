@@ -422,9 +422,10 @@
     --color-input-background: #1b1b1b;
     --color-input-border: #222222;
     --color-input-border-hover: #505667;
-    --color-navbar: #222222;
-    --color-navbar-transparent: #22222200;
-    --color-nav-bg: unset;
+    --color-header-wrapper: #222222;
+    --color-header-wrapper-transparent: #22222200;
+    --color-nav-bg: #222222;
+    --color-nav-hover-bg: #303030;
     --color-light: #00000028;
     --color-light-mimic-enabled: rgba(0, 0, 0, calc(40 / 255 * 222 / 255 / var(--opacity-disabled)));
     --color-light-border: #ffffff28;
@@ -446,7 +447,8 @@
     --color-project-board-bg: var(--color-secondary-light-2);
     --color-caret: var(--color-text);
     --color-reaction-bg: #ffffff12;
-    --color-reaction-active-bg: var(--color-primary-alpha-40)
+    --color-reaction-active-bg: var(--color-primary-alpha-40);
+    --color-label-text: #dbe0ea
 }
 
 ::-webkit-calendar-picker-indicator {
