@@ -19,12 +19,12 @@ Here is a screenshot of my environment and where to find this info:
 
 ![gitea-config](install.png)
 
-## Create a public/css directory under your gitea/custom path and download the theme.
+## Create a public/assets/css directory under your gitea/custom path and download the theme.
 
-Create `/public/css` below your $GITEA_CUSTOM path, MY custom path is `/var/lib/gitea/custom`, as seen in the [install screenshot](install.png).
+Create `/public/assets/css` below your $GITEA_CUSTOM path, MY custom path is `/var/lib/gitea/custom`, as seen in the [install screenshot](install.png).
 
-    sudo mkdir -p /var/lib/gitea/custom/public/css
-    cd /var/lib/gitea/custom/public/css
+    sudo mkdir -p /var/lib/gitea/custom/public/assets/css
+    cd /var/lib/gitea/custom/public/assets/css
     wget https://raw.githubusercontent.com/Jieiku/theme-dark-arc-gitea/main/theme-dark-arc.css
 
 ## Make sure ownership is correct:
@@ -58,17 +58,11 @@ The theme may automatically be active now, but if not click your avatar in top r
 
 ### assets:
 
-`/assets` is simply a POINTER to `$GITEA_CUSTOM/public` you should NOT actually create an assets directory.
+As of 1.21.0 `/assets` now points to `custom/public/assets/*` instead of `custom/public/*`
 
 So for me my directory structure is:
 
-`/var/lib/gitea/custom/public/css/theme-dark-arc.css`
-
-but if you view the page source in a web browser you will see:
-
-`/assets/css/index.css?v=1b37ebcaa3151193e91d19ed55808a12`
-
-They are one and the same file.
+`/var/lib/gitea/custom/public/assets/css/theme-dark-arc.css`
 
 ### You can set `config` and `custom-path` values when running gitea as a service:
 
