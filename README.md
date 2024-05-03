@@ -9,6 +9,14 @@ If you make improvements/tweaks to this theme please send a pull request, or dum
 
 ![dark-arc-repository](screenshot2.png)
 
+# Compatibility
+
+This theme has been tested to work without issue with gitea version 1.21.11
+
+It has been reported that there are [issues](https://github.com/Jieiku/theme-dark-arc-gitea/issues/9) with gitea 1.22.0+ which at the time of this notice is currently Pre-Release status.
+
+I plan to wait a little bit for changes to settle down before supporting 1.22.0+ so it is recommended to stick with 1.21.11 for the time being.
+
 ## Before install, first you need to identify 3 things:
 
 - Location of $GITEA_CUSTOM
