@@ -58,7 +58,7 @@ The theme may automatically be active now, but if not click your avatar in top r
 
 ### assets:
 
-As of 1.21.0 `/assets` now points to `custom/public/assets/*` instead of `custom/public/*`
+As of [1.21.0](https://blog.gitea.com/release-of-1.21.0/#%EF%B8%8F-move-public-asset-files-to-the-proper-directory-25907) `/assets` now points to `custom/public/assets/*` instead of `custom/public/*`
 
 So for me my directory structure is:
 
