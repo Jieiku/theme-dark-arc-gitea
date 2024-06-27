@@ -82,10 +82,12 @@ I created a feature request for a way to disable organizations because I don't u
 
 I was promptly told to use css and my request was closed: https://github.com/go-gitea/gitea/issues/19391
 
-This theme can hide organizations using CSS, you can uncomment it at the bottom of the theme:
+This theme can hide organizations related blocks/links using CSS, you can uncomment it at the bottom of the theme:
 
 ```css
-#dashboard-repo-list > div > div:first-child {
-  display: none !important;
-}
+#dashboard-repo-list > div > div:first-child {display: none !important}
+a[href*="organizations"] {display: none !important}
+.dashboard > .secondary-nav {display: none !important}
+.milestones > .secondary-nav {display: none !important}
+.issues > .secondary-nav {display: none !important}
 ```

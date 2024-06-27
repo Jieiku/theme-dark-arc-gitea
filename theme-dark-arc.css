@@ -610,7 +610,9 @@ strong.attention-caution, svg.attention-caution {
 
 /* Uncomment to remove dashboard tabs */
 /*
-#dashboard-repo-list > div > div:first-child {
-  display: none !important;
-}
+#dashboard-repo-list > div > div:first-child {display: none !important}
+a[href*="organizations"] {display: none !important}
+.dashboard > .secondary-nav {display: none !important}
+.milestones > .secondary-nav {display: none !important}
+.issues > .secondary-nav {display: none !important}
 */
