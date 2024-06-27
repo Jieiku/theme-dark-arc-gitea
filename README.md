@@ -1,7 +1,7 @@
 # Dark Arc
 A dark theme for gitea with high contrast.
 
-This theme was originally created by making a copy of theme-arc-green.css and making things darker for better contrast.
+This theme was originally created by making a copy of `theme-arc-green.css` and making things darker for better contrast. Since then it has been rebased onto the gitea-dark theme for Gitea 1.22 compatibility.
 
 If you make improvements/tweaks to this theme please send a pull request, or dump your changes in an issue report.
 
