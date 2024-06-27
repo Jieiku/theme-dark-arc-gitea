@@ -1,7 +1,7 @@
 # Dark Arc
 A dark theme for gitea with high contrast.
 
-This theme was created by making a copy of theme-arc-green.css and making things darker for better contrast.
+This theme was originally created by making a copy of theme-arc-green.css and making things darker for better contrast.
 
 If you make improvements/tweaks to this theme please send a pull request, or dump your changes in an issue report.
 
@@ -11,11 +11,7 @@ If you make improvements/tweaks to this theme please send a pull request, or dum
 
 # Compatibility
 
-This theme has been tested to work without issue with gitea version 1.21.11
-
-It has been reported that there are [issues](https://github.com/Jieiku/theme-dark-arc-gitea/issues/9) with gitea 1.22.0+ which at the time of this notice is currently Pre-Release status.
-
-I plan to wait a little bit for changes to settle down before supporting 1.22.0+ so it is recommended to stick with 1.21.11 for the time being.
+This theme has been tested to work without issues on Gitea 1.22 and Forgejo 7.0.
 
 ## Before install, first you need to identify 3 things:
 
