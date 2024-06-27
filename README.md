@@ -86,7 +86,7 @@ I created a feature request for a way to disable organizations because I don't u
 
 I was promptly told to use css and my request was closed: https://github.com/go-gitea/gitea/issues/19391
 
-This theme hides Organizations using CSS, you can find it at the bottom of the theme:
+This theme can hide organizations using CSS, you can uncomment it at the bottom of the theme:
 
 ```css
 #dashboard-repo-list > div > div:first-child {
