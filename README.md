@@ -33,7 +33,7 @@ Create `/public/assets/css` below your $GITEA_CUSTOM path, MY custom path is `/v
 
     sudo mkdir -p /var/lib/gitea/custom/public/assets/css
     cd /var/lib/gitea/custom/public/assets/css
-    wget https://raw.githubusercontent.com/Jieiku/theme-dark-arc-gitea/main/theme-dark-arc.css
+    curl -o theme-dark-arc.css https://raw.githubusercontent.com/Jieiku/theme-dark-arc-gitea/main/theme-dark-arc.min.css
 
 ## Make sure ownership is correct:
 
